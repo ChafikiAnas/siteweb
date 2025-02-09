@@ -153,7 +153,7 @@ button[type="button"]:hover {
     background-color: #f57c00;
 }
 /* Footer */
-footer {
+footer{
     background-color: #333;
     color: #fff;
     text-align: center;
@@ -183,5 +183,3 @@ footer p {
         font-size: 1em;
     }
 }
-
-
