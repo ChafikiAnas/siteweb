@@ -1,0 +1,170 @@
+/* Importation de Google Fonts pour une meilleure typographie */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+/* Style global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f1f1f1;
+    color: #333;
+    line-height: 1.6;
+    transition: background-color 0.3s ease;
+}
+
+header {
+    background-color: #1e3a8a; /* Bleu profond */
+    color: white;
+    padding: 5px 0;
+    text-align: center;
+    border-bottom: 2px solid #0f172a; /* Ombre subtile */
+}
+
+header .logo-container img {
+    width: 200px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+header .logo-container img:hover {
+    transform: scale(1.1); /* Effet de zoom du logo */
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+/* Animation d'apparition */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form label {
+    font-size: 1.2em;
+    margin-bottom: 8px;
+}
+
+form input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus {
+    border-color: #1e3a8a; /* Color accent on focus */
+    outline: none;
+}
+
+form button {
+    padding: 12px;
+    background-color: #4CAF50; /* Vert lumineux */
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+form button:hover {
+    transform: translateY(-3px); /* Légère élévation au survol */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+form button {
+    padding: 12px;
+    background-color: #4CAF50; /* Vert pour le bouton Valider */
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+form button:hover {
+    transform: translateY(-3px); /* Effet d'élévation */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    background-color: #45a049; /* Changement de couleur au survol */
+}
+
+form button[type="submit"]:last-child {
+    background-color: #f44336; /* Rouge pour Annuler */
+}
+
+form button[type="submit"]:last-child:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Page Résultat */
+.container h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.container p {
+    font-size: 1.4em;
+    margin: 15px 0;
+    color: #555;
+}
+
+.container p:first-child {
+    font-weight: bold;
+}
+
+.container p:last-child {
+    font-style: italic;
+}
+
+/* Boutons supplémentaires */
+button[type="button"] {
+    background-color: #ff9800; /* Orange pour le bouton Annuler */
+}
+
+button[type="button"]:hover {
+    background-color: #f57c00;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    form input, form button {
+        font-size: 1em;
+    }
+}

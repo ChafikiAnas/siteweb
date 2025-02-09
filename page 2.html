@@ -1,0 +1,39 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Étudiant</title>
+    <link rel="stylesheet" href="style css.css">
+    <link rel="icon"  href="logo.png" >
+    <script>
+        function redirectToPage3(event) {
+            event.preventDefault();
+            window.location.href = 'page 3.html';
+        }
+    </script>
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo CheckEtudiant">
+        </div>
+    </header>
+
+
+    <div class="container">
+        <form onsubmit="redirectToPage3(event)">
+            <label for="name">Etudiant</label>
+            <input type="text" id="name" name="name" required><tr></tr>
+            <label for="name">Math</label>
+            <input type="text" id="name" name="name" required>
+            <label for="name">Informatique</label>
+            <input type="text" id="name" name="name" required>
+
+            
+            <button type="submit">Resultat</button>
+            <button type="submit">Annuler</button>
+        </form>
+    </div>
+</body>
+</html>
