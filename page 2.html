@@ -5,12 +5,6 @@
     <title>Étudiant</title>
     <link rel="stylesheet" href="style css.css">
     <link rel="icon"  href="logo.png" >
-    <script>
-        function redirectToPage3(event) {
-            event.preventDefault();
-            window.location.href = 'page 3.html';
-        }
-    </script>
 </head>
 <body>
 
@@ -22,7 +16,7 @@
 
 
     <div class="container">
-        <form onsubmit="redirectToPage3(event)">
+        <form action="page 3.html" method="get"">
             <label for="name">Etudiant</label>
             <input type="text" id="name" name="name" required><tr></tr>
             <label for="name">Math</label>

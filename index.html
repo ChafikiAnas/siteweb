@@ -6,12 +6,6 @@
     <title>Student Tracker</title>
     <link rel="stylesheet" href="style css.css">
     <link rel="icon"  href="logo.png" >
-    <script>
-        function redirectToPage2(event) {
-            event.preventDefault();
-            window.location.href = 'page 2.html';
-        }
-    </script>
 </head>
 <body>
 
@@ -23,7 +17,7 @@
 
     <div class="container">
         <h1>Student Tracker</h1>
-        <form onsubmit="redirectToPage2(event)">
+        <form action="page 2.html" method="get">
             <label for="identifiant">Identifiant</label>
             <input type="text" id="identifiant" name="identifiant" required>
             
@@ -34,7 +28,7 @@
         </form>
     </div>
 </body>
- <footer>
+<footer>
     <p>&copy; 2024 Check Student. Tous droits réservés.</p>
 </footer>
 
