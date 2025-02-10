@@ -16,16 +16,17 @@
 
 
      <div class="container">
-        <form action="page 3.html" method="get"">
-            <label for="Etudiant">Etudiant</label>
-            <input type="text" id="Etudiant" name="Etudiant" required><tr></tr>
+        <form action="page 3.html" method="get">
+            <label for="Etudiant">Étudiant</label>
+            <input type="text" id="Etudiant" name="Etudiant" required>
+    
             <label for="Math">Math</label>
-            <input type="text" id="name" name="name" required>
+            <input type="number" id="Math" name="Math" min="0.00" max="20.00" step="0.01" required>
+    
             <label for="Informatique">Informatique</label>
-            <input type="text" id="Informatique" name="Informatique" required>
-
-            
-            <button type="submit">Resultat</button>
+            <input type="number" id="Informatique" name="Informatique" min="0.00" max="20.00" step="0.01" required>
+    
+            <button type="submit">Résultat</button>
             <button type="submit">Annuler</button>
         </form>
     </div>
