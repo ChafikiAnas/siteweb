@@ -1,7 +1,6 @@
-/* Importation de Google Fonts pour une meilleure typographie */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
-/* Style global */
+
 * {
     margin: 0;
     padding: 0;
@@ -17,11 +16,10 @@ body {
 }
 
 header {
-    background-color: #1e3a8a; /* Bleu profond */
-    color: white;
+    background-color: #1e3a8a; 
     padding: 5px 0;
     text-align: center;
-    border-bottom: 2px solid #0f172a; /* Ombre subtile */
+    border-bottom: 2px solid #0f172a; 
 }
 
 header .logo-container img {
@@ -77,13 +75,13 @@ form input {
 }
 
 form input:focus {
-    border-color: #1e3a8a; /* Color accent on focus */
+    border-color: #1e3a8a; 
     outline: none;
 }
 
 form button {
     padding: 12px;
-    background-color: #4CAF50; /* Vert lumineux */
+    background-color: #4CAF50; 
     color: #fff;
     border: none;
     border-radius: 6px;
@@ -93,12 +91,12 @@ form button {
 }
 
 form button:hover {
-    transform: translateY(-3px); /* Légère élévation au survol */
+    transform: translateY(-3px); 
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 form button {
     padding: 12px;
-    background-color: #4CAF50; /* Vert pour le bouton Valider */
+    background-color: #4CAF50; 
     color: #fff;
     border: none;
     border-radius: 6px;
@@ -108,13 +106,13 @@ form button {
 }
 
 form button:hover {
-    transform: translateY(-3px); /* Effet d'élévation */
+    transform: translateY(-3px); 
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-    background-color: #45a049; /* Changement de couleur au survol */
+    background-color: #45a049; 
 }
 
 form button[type="submit"]:last-child {
-    background-color: #f44336; /* Rouge pour Annuler */
+    background-color: #f44336; 
 }
 
 form button[type="submit"]:last-child:hover {
@@ -144,9 +142,8 @@ form button[type="submit"]:last-child:hover {
     font-style: italic;
 }
 
-/* Boutons supplémentaires */
 button[type="button"] {
-    background-color: #ff9800; /* Orange pour le bouton Annuler */
+    background-color: #ff9800; 
 }
 
 button[type="button"]:hover {
